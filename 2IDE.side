@@ -1,0 +1,263 @@
+{
+  "id": "3c2f48b3-89eb-41ae-b3c9-eba440506c12",
+  "version": "2.0",
+  "name": "2IDE",
+  "url": "https://223.rts-tender.ru/supplier/auction/Trade/Search.aspx",
+  "tests": [{
+    "id": "d9c3110f-f7a5-4c84-abf7-97aa4340dbee",
+    "name": "Ошибка",
+    "commands": [{
+      "id": "69a4c0a4-a262-4b08-b554-e293cc2ad3b7",
+      "comment": "Открываем страницу",
+      "command": "open",
+      "target": "https://223.rts-tender.ru/supplier/auction/Trade/Search.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6eaac561-6320-4de5-919a-823cdd86df94",
+      "comment": "Ставим чекбокс",
+      "command": "check",
+      "target": "xpath=//input[@id='BaseMainContent_MainContent_cbxCollectivePurchasing' and @name='ctl00$ctl00$BaseMainContent$MainContent$cbxCollectivePurchasing' and @type='checkbox']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d212270-58c7-4db5-8e43-a7f47b67b87d",
+      "comment": "Ставим чекбокс",
+      "command": "check",
+      "target": "xpath=//input[@id='BaseMainContent_MainContent_cbxIsForSubjectsSmb' and @name='ctl00$ctl00$BaseMainContent$MainContent$cbxIsForSubjectsSmb' and @type='checkbox']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a121615d-b535-4d78-909b-93f74dbc4a2f",
+      "comment": "Ставим чекбокс",
+      "command": "check",
+      "target": "xpath=//input[@id='BaseMainContent_MainContent_cbxIsTradeInvalid' and @name='ctl00$ctl00$BaseMainContent$MainContent$cbxIsTradeInvalid' and @type='checkbox']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "710057b9-6d48-43d1-91eb-6bee04e4064b",
+      "comment": "Ставим чекбокс",
+      "command": "check",
+      "target": "xpath=//span/input[@id='BaseMainContent_MainContent_chkPurchaseType_0' and @name='ctl00$ctl00$BaseMainContent$MainContent$chkPurchaseType$0' and @type='checkbox']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d9572d9-5761-47dd-9bec-2c031e19617f",
+      "comment": "Ставим чекбокс",
+      "command": "check",
+      "target": "xpath=//span/input[@id='BaseMainContent_MainContent_chkPurchaseType_1' and @name='ctl00$ctl00$BaseMainContent$MainContent$chkPurchaseType$1' and @type='checkbox']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53e14ef0-3065-45f1-bf43-30cf33d00c70",
+      "comment": "Ставим чекбокс",
+      "command": "check",
+      "target": "xpath=//span/input[@id='BaseMainContent_MainContent_chkPurchaseType_2' and @name='ctl00$ctl00$BaseMainContent$MainContent$chkPurchaseType$2' and @type='checkbox']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f5f061e-8f1a-414f-9efc-59125474251a",
+      "comment": "Ставим чекбокс",
+      "command": "check",
+      "target": "xpath=//span/input[@id='BaseMainContent_MainContent_chkPurchaseType_3' and @name='ctl00$ctl00$BaseMainContent$MainContent$chkPurchaseType$3' and @type='checkbox']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68fa75cd-b7ca-4989-b417-d8461f24b4ba",
+      "comment": "Ставим чекбокс",
+      "command": "check",
+      "target": "xpath=//span/input[@id='BaseMainContent_MainContent_chkPurchaseType_4' and @name='ctl00$ctl00$BaseMainContent$MainContent$chkPurchaseType$4' and @type='checkbox']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79429606-5215-4b06-8c61-48622a7ec5cb",
+      "comment": "Ставим чекбокс",
+      "command": "check",
+      "target": "xpath=//span/input[@id='BaseMainContent_MainContent_chkPurchaseType_5' and @name='ctl00$ctl00$BaseMainContent$MainContent$chkPurchaseType$5' and @type='checkbox']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6da2991-99f6-4890-ac56-ee017d889303",
+      "comment": "Прописываем заказчика",
+      "command": "type",
+      "target": "xpath=//input[@id='BaseMainContent_MainContent_txtOrgnizer_txtText' and @name='ctl00$ctl00$BaseMainContent$MainContent$txtOrgnizer$txtText' and @type='text']",
+      "targets": [],
+      "value": "лукойл"
+    }, {
+      "id": "36523aa6-064e-4019-bed3-96cf92cd20c8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var d=new Date(); return d.getDate()+'.0'+((d.getMonth()+1)) +'.'+d.getFullYear();",
+      "targets": [],
+      "value": "cur_date"
+    }, {
+      "id": "97dcc3c2-7086-49ae-96c5-68fc0277273c",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@id='BaseMainContent_MainContent_txtPublicationDate_txtDateFrom' and @name='ctl00$ctl00$BaseMainContent$MainContent$txtPublicationDate$txtDateFrom' and @type='text']",
+      "targets": [],
+      "value": "${cur_date}"
+    }, {
+      "id": "824621bd-1165-47d8-ae48-f692c975bce0",
+      "comment": "",
+      "command": "//executeScript",
+      "target": "var d=new Date(); return d.getDate()+'.0'+((d.getMonth()+1)) +'.'+d.getFullYear();",
+      "targets": [],
+      "value": "cur_date2"
+    }, {
+      "id": "eb519f27-1e3c-4ea5-bcc2-a65fd103674c",
+      "comment": "",
+      "command": "//type",
+      "target": "xpath=//input[@id='BaseMainContent_MainContent_txtPublicationDate_txtDateTo' and @name='ctl00$ctl00$BaseMainContent$MainContent$txtPublicationDate$txtDateTo' and @type='text']",
+      "targets": [],
+      "value": "${cur_date2}"
+    }, {
+      "id": "8a04c4c9-23c8-4034-bf8d-373b97f6cf72",
+      "comment": "Нажимаем кнопку Поиск",
+      "command": "clickAt",
+      "target": "xpath=//a[@id='BaseMainContent_MainContent_btnSearch' and contains(text(),'Поиск')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "536216ae-9b9a-4d27-b1da-b591808e10bc",
+      "comment": "",
+      "command": "pause",
+      "target": "700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a67ed811-ef57-4be0-9f61-e3e027de3e7d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//li[contains(.,'Неверно заполнено поле')]",
+      "targets": [
+        ["css=#BaseMainContent_MainContent_vsFilter li", "css:finder"],
+        ["xpath=//div[@id='BaseMainContent_MainContent_vsFilter']/ul/li", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Неверно заполнено поле')]", "xpath:innerText"]
+      ],
+      "value": "Неверно заполнено поле"
+    }, {
+      "id": "196073c6-8952-4b3f-95e3-e9770dcba0c1",
+      "comment": "",
+      "command": "pause",
+      "target": "700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "581509b8-751b-4c3b-8a22-1bdb4dd8b2a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=BaseMainContent_MainContent_txtPublicationDate_txtDateFrom",
+      "targets": [
+        ["id=BaseMainContent_MainContent_txtPublicationDate_txtDateFrom", "id"],
+        ["name=ctl00$ctl00$BaseMainContent$MainContent$txtPublicationDate$txtDateFrom", "name"],
+        ["css=#BaseMainContent_MainContent_txtPublicationDate_txtDateFrom", "css:finder"],
+        ["xpath=//input[@id='BaseMainContent_MainContent_txtPublicationDate_txtDateFrom']", "xpath:attributes"],
+        ["xpath=//div[@id='BaseMainContent_MainContent_upFilter']/div/div/div/div/div/fieldset[9]/div/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "707955d9-3e48-4f7c-93a9-c68020cef8ea",
+      "comment": "Стираем дату",
+      "command": "type",
+      "target": "xpath=//input[@id='BaseMainContent_MainContent_txtPublicationDate_txtDateFrom' and @name='ctl00$ctl00$BaseMainContent$MainContent$txtPublicationDate$txtDateFrom' and @type='text']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd3427e4-a3aa-4bfb-b509-a993b83c487b",
+      "comment": "Нажимаем кнопку Поиск",
+      "command": "clickAt",
+      "target": "xpath=//a[@id='BaseMainContent_MainContent_btnSearch' and contains(text(),'Поиск')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fec7565d-b5b5-425f-831e-c85bbca07e01",
+      "comment": "",
+      "command": "pause",
+      "target": "700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1ac1c1a-86f9-409a-ac51-daa438f85814",
+      "comment": "Проверяем есть ли заказчики не Лукойл",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//a[contains(text(),'ЛУКОЙЛ')]",
+      "targets": [
+        ["linkText=ООО \"ЛУКОЙЛ-СТАВРОПОЛЬЭНЕРГО\"", "linkText"],
+        ["css=#\\33 236916 > td:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ООО \"ЛУКОЙЛ-СТАВРОПОЛЬЭНЕРГО\"')]", "xpath:link"],
+        ["xpath=//tr[@id='3236916']/td[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://223.rts-tender.ru/supplier/lk/Accreditation/OrganizationView.aspx?Id=0f9a2884-b0c0-4692-b75c-dfce8b209f5a')]", "xpath:href"],
+        ["xpath=//td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ООО \"ЛУКОЙЛ-СТАВРОПОЛЬЭНЕРГО\"')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23370997-9832-425f-b0ab-74080a2b48a6",
+      "comment": "",
+      "command": "pause",
+      "target": "700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f4b188d-6a06-4d73-ba3f-3f1342c52f0c",
+      "comment": "",
+      "command": "echo",
+      "target": "Нет элементов, не содержащих слово \"лукойл\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01b5907e-8cba-4009-94ef-bd729ce9f552",
+      "comment": "Вводим предмет договора",
+      "command": "type",
+      "target": "xpath=//input[@id='BaseMainContent_MainContent_txtLotName_txtText' and @name='ctl00$ctl00$BaseMainContent$MainContent$txtLotName$txtText' and @type='text']",
+      "targets": [],
+      "value": "известь"
+    }, {
+      "id": "c5dfad9e-676d-4931-a859-54421f74b874",
+      "comment": "Нажимаем кнопку Поиск",
+      "command": "clickAt",
+      "target": "xpath=//a[@id='BaseMainContent_MainContent_btnSearch' and contains(text(),'Поиск')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9157d9f6-b0f7-4c74-85fd-12a78d2aa0ce",
+      "comment": "",
+      "command": "pause",
+      "target": "700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc5aaf0b-7b9b-48d6-b483-979f24ed98a7",
+      "comment": "Проверяем наличие других продуктов",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//td[contains(.,'Известь')]",
+      "targets": [
+        ["css=#\\32 061212 > td:nth-child(10)", "css:finder"],
+        ["xpath=//tr[@id='2061212']/td[10]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[10]", "xpath:position"],
+        ["xpath=//td[contains(.,'Известь строительная негашеная')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63e4e8e0-7641-4e16-8866-82d6941fe10e",
+      "comment": "",
+      "command": "echo",
+      "target": "Нет элементов, не содержащих слово \"известь\"",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2d19fab6-a34d-4f0e-9ea4-64934d0339e0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://sevenergosbyt.ru/flk/"],
+  "plugins": []
+}
